@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.inf.sixthPaneController">
+   <children>
+      <Button fx:id="nextButton" layoutX="441.0" layoutY="342.0" mnemonicParsing="false" onAction="#pushedNext" text="ÚJRA FOGLALOK">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="115.0" fitWidth="175.0" layoutX="441.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Hotel_Menthol-logos.jpeg.jpg" />
+         </image>
+      </ImageView>
+      <Pane fx:id="textBackground" prefHeight="400.0" prefWidth="411.0">
+         <children>
+            <Text layoutX="81.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Köszönjük a foglalását!" wrappingWidth="248.63824462890625">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text layoutX="22.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Az esetleges problémákért vagy visszamondásért az alábbi elérhetőségeken tudja elérni ügyfélszolgálatunkat:" textAlignment="CENTER" wrappingWidth="346.6926574707031">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="137.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="example@gmail,com" textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="131.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="tel.: +65 25 365 6985" textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
