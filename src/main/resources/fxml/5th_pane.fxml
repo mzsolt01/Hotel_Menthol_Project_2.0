@@ -18,11 +18,11 @@
                 <Font size="13.0" />
             </font>
         </Text>
-        <Button fx:id="foglalasButton" layoutX="450.0" layoutY="360.0" mnemonicParsing="false" onAction="#pushedFoglalas" stylesheets="@../styles/Styles.css" text="Foglalás Véglegesítése">
+        <Button fx:id="foglalasButton" layoutX="440.0" layoutY="350.0" mnemonicParsing="false" onAction="#pushedFoglalas" stylesheets="@../styles/Styles.css" text="Foglalás Véglegesítése">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font></Button>
-        <Button fx:id="backButton" layoutX="393.0" layoutY="360.0" mnemonicParsing="false" onAction="#pushedBack" text="Vissza">
+        <Button fx:id="backButton" layoutX="380.0" layoutY="350.0" mnemonicParsing="false" onAction="#pushedBack" text="Vissza">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font></Button>

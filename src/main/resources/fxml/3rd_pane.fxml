@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="border" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.inf.thirdPaneController">
+<AnchorPane fx:id="backgroundimg" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url(&quot;logo.j&quot;);" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.inf.thirdPaneController">
    <children>
       <Text layoutX="14.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nászutas lakosztály :">
          <font>
@@ -38,11 +38,11 @@
             <Font size="14.0" />
          </font>
       </Text>
-      <Button fx:id="nextButton" layoutX="512.0" layoutY="360.0" mnemonicParsing="false" onAction="#pushedNext" text="Következő">
+      <Button fx:id="nextButton" layoutX="512.0" layoutY="350.0" mnemonicParsing="false" onAction="#pushedNext" text="Következő">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font></Button>
-      <Button fx:id="backButton" layoutX="430.0" layoutY="360.0" mnemonicParsing="false" onAction="#pushedBack" prefHeight="26.0" prefWidth="60.0" text="Vissza">
+      <Button fx:id="backButton" layoutX="425.0" layoutY="350.0" mnemonicParsing="false" onAction="#pushedBack" prefHeight="26.0" prefWidth="60.0" text="Vissza">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font></Button>
@@ -62,7 +62,7 @@
             <Font size="14.0" />
          </font>
       </Text>
-      <ImageView fitHeight="115.0" fitWidth="175.0" layoutX="455.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="132.0" fitWidth="146.0" layoutX="446.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Hotel_Menthol-logos.jpeg.jpg" />
          </image>
