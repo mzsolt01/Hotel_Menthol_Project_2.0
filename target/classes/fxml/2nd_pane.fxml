@@ -10,39 +10,39 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="border" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.inf.secondPaneController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.inf.secondPaneController">
    <children>
-      <Pane fx:id="textBackground" layoutX="-1.0" prefHeight="400.0" prefWidth="411.0">
+      <Pane fx:id="textBackground" prefHeight="400.0" prefWidth="410.0">
          <children>
-            <Text layoutX="152.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Üdvözöljük!">
+            <Text layoutX="125.0" layoutY="67.0" strokeLineCap="BUTT" strokeLineJoin="BEVEL" strokeWidth="0.0" style="-fx-font-family: Arial, Helvetica, sans-serif;" text="Üdvözöljük!" wrappingWidth="169.11346435546875">
                <font>
                   <Font size="30.0" />
                </font>
             </Text>
-            <Text layoutX="78.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Személyes adatok megadása :">
+            <Text layoutX="14.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Személyes adatok:">
                <font>
                   <Font size="17.0" />
                </font>
             </Text>
+            <TextField layoutX="126.0" layoutY="295.0" promptText="E-mail" />
+            <TextField layoutX="126.0" layoutY="218.0" promptText="Szem. ig. szám" />
+            <TextField layoutX="126.0" layoutY="259.0" promptText="Tel.:" />
+            <CheckBox layoutX="205.0" layoutY="337.0" mnemonicParsing="false" text="Háziállat" />
+            <CheckBox layoutX="126.0" layoutY="337.0" mnemonicParsing="false" text="Gyerek" />
+            <TextField layoutX="126.0" layoutY="181.0" promptText="Keresztnév" />
+            <TextField layoutX="125.0" layoutY="143.0" prefHeight="25.0" prefWidth="150.0" promptText="Vezetéknév" />
          </children></Pane>
-      <TextField layoutX="90.0" layoutY="144.0" promptText="Vezetéknév" />
-      <TextField layoutX="90.0" layoutY="178.0" promptText="Keresztnév" />
-      <CheckBox layoutX="92.0" layoutY="221.0" mnemonicParsing="false" text="Gyerek" />
-      <CheckBox layoutX="174.0" layoutY="221.0" mnemonicParsing="false" text="Háziállat" />
-      <TextField layoutX="92.0" layoutY="257.0" promptText="Tel.:" />
-      <TextField layoutX="92.0" layoutY="295.0" promptText="E-mail" />
-      <TextField layoutX="92.0" layoutY="330.0" promptText="Szem. ig. szám" />
-      <Button fx:id="nextButton" layoutX="522.0" layoutY="370.0" mnemonicParsing="false" onAction="#pushedNext" text="Következő">
+      <Button fx:id="nextButton" layoutX="512.0" layoutY="350.0" mnemonicParsing="false" onAction="#pushedNext" text="Következő">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
       </Button>
-      <Button fx:id="backButton" layoutX="440.0" layoutY="370.0" mnemonicParsing="false" onAction="#pushedBack" prefHeight="26.0" prefWidth="60.0" stylesheets="@../styles/Styles.css" text="Vissza">
+      <Button fx:id="backButton" layoutX="425.0" layoutY="350.0" mnemonicParsing="false" onAction="#pushedBack" prefHeight="26.0" prefWidth="60.0" stylesheets="@../styles/Styles.css" text="Vissza">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
       </Button>
-      <ImageView fitHeight="153.0" fitWidth="156.0" layoutX="437.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="150.0" fitWidth="185.0" layoutX="430.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Hotel_Menthol-logos.jpeg.jpg" />
          </image>
