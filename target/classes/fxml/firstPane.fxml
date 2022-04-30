@@ -8,9 +8,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="border" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.inf.firstPaneController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.inf.firstPaneController">
    <children>
-      <Pane fx:id="textBackground" prefHeight="400.0" prefWidth="412.0">
+      <Pane fx:id="textBackground" prefHeight="400.0" prefWidth="410.0">
          <children>
             <Text layoutX="136.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="example@gmail.com">
                <font>
@@ -39,12 +39,12 @@
             </Text>
          </children>
       </Pane>
-      <ImageView fitHeight="150.0" fitWidth="184.0" layoutX="429.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="150.0" fitWidth="185.0" layoutX="430.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Hotel_Menthol-logos.jpeg.jpg" />
          </image>
       </ImageView>
-      <Button id="nextButton" fx:id="nextButton" layoutX="419.0" layoutY="334.0" mnemonicParsing="false" onAction="#next" prefHeight="43.0" prefWidth="174.0" text="Foglalás megkezdése">
+      <Button id="nextButton" fx:id="nextButton" layoutX="420.0" layoutY="340.0" mnemonicParsing="false" onAction="#next" prefHeight="35.0" prefWidth="170.0" text="Foglalás megkezdése">
          <font>
             <Font name="System Bold Italic" size="15.0" />
          </font>

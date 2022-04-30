@@ -10,12 +10,12 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.inf.sixthPaneController">
    <children>
-      <Button fx:id="nextButton" layoutX="441.0" layoutY="342.0" mnemonicParsing="false" onAction="#pushedNext" text="ÚJRA FOGLALOK">
+      <Button fx:id="nextButton" layoutX="420.0" layoutY="340.0" mnemonicParsing="false" onAction="#pushedNext" prefHeight="35.0" prefWidth="170.0" text="Kezdő oldal">
          <font>
-            <Font name="System Bold Italic" size="14.0" />
+            <Font name="System Bold" size="15.0" />
          </font>
       </Button>
-      <ImageView fitHeight="115.0" fitWidth="175.0" layoutX="441.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="150.0" fitWidth="185.0" layoutX="430.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Hotel_Menthol-logos.jpeg.jpg" />
          </image>
