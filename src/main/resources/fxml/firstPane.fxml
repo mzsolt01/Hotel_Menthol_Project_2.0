@@ -5,6 +5,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
@@ -39,9 +40,9 @@
             </Text>
          </children>
       </Pane>
-      <ImageView fitHeight="150.0" fitWidth="185.0" layoutX="430.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="140.0" fitWidth="180.0" layoutX="415.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@Hotel_Menthol-logos.jpeg.jpg" />
+            <Image url="@logo.jpg" />
          </image>
       </ImageView>
       <Button id="nextButton" fx:id="nextButton" layoutX="420.0" layoutY="340.0" mnemonicParsing="false" onAction="#next" prefHeight="35.0" prefWidth="170.0" text="Foglalás megkezdése">
@@ -49,5 +50,6 @@
             <Font name="System Bold Italic" size="15.0" />
          </font>
       </Button>
+      <Line endX="115.39999389648438" endY="304.0" layoutX="295.0" layoutY="96.0" startX="115.39999389648438" startY="-96.0" stroke="#00000054" />
    </children>
 </AnchorPane>
