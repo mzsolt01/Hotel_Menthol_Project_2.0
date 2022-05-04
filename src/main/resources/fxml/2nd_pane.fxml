@@ -37,9 +37,9 @@
             <Font name="System Bold Italic" size="12.0" />
          </font>
       </Button>
-      <ImageView fitHeight="150.0" fitWidth="185.0" layoutX="430.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="140.0" fitWidth="179.0" layoutX="416.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@Hotel_Menthol-logos.jpeg.jpg" />
+            <Image url="@logo.jpg" />
          </image>
       </ImageView>
    </children>
