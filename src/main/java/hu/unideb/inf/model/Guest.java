@@ -14,6 +14,24 @@ public class Guest implements Serializable {
     private String szemIgSzam;
     private String tel;
     private String email;
+    private boolean child;
+    private boolean animal;
+
+    public boolean isChild() {
+        return child;
+    }
+
+    public void setChild(boolean child) {
+        this.child = child;
+    }
+
+    public boolean isAnimal() {
+        return animal;
+    }
+
+    public void setAnimal(boolean animal) {
+        this.animal = animal;
+    }
 
     public String getLastName() {
         return lastName;

@@ -3,6 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.inf.secondPaneController">
@@ -26,6 +27,7 @@
             <CheckBox layoutX="126.0" layoutY="337.0" mnemonicParsing="false" text="Gyerek" />
             <TextField layoutX="126.0" layoutY="181.0" promptText="Keresztnév" />
             <TextField layoutX="125.0" layoutY="143.0" prefHeight="25.0" prefWidth="150.0" promptText="Vezetéknév" />
+            <Line endX="115.39999389648438" endY="304.0" layoutX="295.0" layoutY="96.0" startX="115.39999389648438" startY="-96.0" stroke="#00000053" />
          </children></Pane>
       <Button fx:id="nextButton" layoutX="512.0" layoutY="350.0" mnemonicParsing="false" onAction="#pushedNext" text="Következő">
          <font>
