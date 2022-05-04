@@ -3,6 +3,7 @@ hu\unideb\inf\firstPaneController.class
 hu\unideb\inf\secondPaneController.class
 hu\unideb\inf\thirdPaneController.class
 hu\unideb\inf\Main.class
+hu\unideb\inf\model\Guest.class
 hu\unideb\inf\sixthPaneController.class
 hu\unideb\inf\fourthPaneController.class
 hu\unideb\inf\MainApp.class
