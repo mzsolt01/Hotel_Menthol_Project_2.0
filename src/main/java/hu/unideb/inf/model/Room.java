@@ -8,7 +8,6 @@ import javax.persistence.Id;
 public class Room {
 
     @Id
-    @GeneratedValue
     private Integer id;
     private String type;
     private String checkInDate;

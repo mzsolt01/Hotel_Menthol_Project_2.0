@@ -1,10 +1,15 @@
 package hu.unideb.inf;
 
+import hu.unideb.inf.model.Guest;
+import hu.unideb.inf.model.GuestDAO;
+import hu.unideb.inf.model.JpaGuestDAO;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.CheckBox;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -17,6 +22,27 @@ public class secondPaneController {
     private Button backButton;
 
     @FXML
+    private TextField LastName;
+
+    @FXML
+    private TextField FirstName;
+
+    @FXML
+    private TextField SzemIgSzam;
+
+    @FXML
+    private TextField Tel;
+
+    @FXML
+    private TextField Email;
+
+    @FXML
+    private CheckBox Child;
+
+    @FXML
+    private CheckBox Animal;
+
+    @FXML
     void pushedNext(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(MainApp.class.getResource("/fxml/3rd_pane.fxml"));
         Scene scene = new Scene(loader.load());
@@ -27,6 +53,7 @@ public class secondPaneController {
         stage.setTitle("Foglalás");
         stage.setScene(scene);
         stage.show();
+        textHandler();
     }
 
     @FXML
@@ -40,5 +67,23 @@ public class secondPaneController {
         stage.setTitle("Hotel Menthol");
         stage.setScene(scene);
         stage.show();
+    }
+
+    public void textHandler() {
+        //try-with-resources
+        try (GuestDAO aDAO = new JpaGuestDAO();) {
+            Guest guest = new Guest();
+            guest.setLastName(LastName.getText());
+            guest.setFirstName(FirstName.getText());
+            guest.setSzemIgSzam(SzemIgSzam.getText());
+            guest.setTel(Tel.getText());
+            guest.setEmail(Email.getText());
+            guest.setChild(Child.isSelected());
+            guest.setAnimal(Animal.isSelected());
+
+            aDAO.saveGuest(guest);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
