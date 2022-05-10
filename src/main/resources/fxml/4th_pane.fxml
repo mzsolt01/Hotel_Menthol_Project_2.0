@@ -32,17 +32,17 @@
                   <Font size="33.0" />
                </font>
             </Text>
-            <RadioButton layoutX="245.0" layoutY="95.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="82.0" text="Reggeli">
+            <RadioButton layoutX="245.0" layoutY="95.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="82.0" style="-fx-font-family: Century Gothic;" text="Reggeli">
                <font>
                   <Font size="13.0" />
                </font>
             </RadioButton>
-            <RadioButton layoutX="245.0" layoutY="121.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="82.0" text="Ebéd">
+            <RadioButton layoutX="245.0" layoutY="121.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="82.0" style="-fx-font-family: Century Gothic;" text="Ebéd">
                <font>
                   <Font size="13.0" />
                </font>
             </RadioButton>
-            <RadioButton layoutX="245.0" layoutY="149.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="82.0" text="Vacsora">
+            <RadioButton layoutX="245.0" layoutY="149.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="82.0" style="-fx-font-family: Century Gothic;" text="Vacsora">
                <font>
                   <Font size="13.0" />
                </font>
@@ -54,42 +54,42 @@
             <Font size="33.0" />
          </font>
       </Text>
-      <RadioButton layoutX="47.0" layoutY="96.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="82.0" text="Takarítás">
+      <RadioButton layoutX="47.0" layoutY="96.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="82.0" style="-fx-font-family: Century Gothic;" text="Takarítás">
          <font>
             <Font size="13.0" />
          </font>
       </RadioButton>
-      <RadioButton layoutX="47.0" layoutY="126.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="82.0" text="Széf">
+      <RadioButton layoutX="47.0" layoutY="126.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="82.0" style="-fx-font-family: Century Gothic;" text="Széf">
          <font>
             <Font size="13.0" />
          </font>
       </RadioButton>
-      <RadioButton layoutX="47.0" layoutY="158.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="82.0" text="Szolárium">
+      <RadioButton layoutX="47.0" layoutY="158.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="93.0" style="-fx-font-family: Century Gothic;" text="Szolárium">
          <font>
             <Font size="13.0" />
          </font>
       </RadioButton>
-      <RadioButton layoutX="47.0" layoutY="191.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="82.0" text="Jakuzzi">
+      <RadioButton layoutX="47.0" layoutY="191.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="82.0" style="-fx-font-family: Century Gothic;" text="Jakuzzi">
          <font>
             <Font size="13.0" />
          </font>
       </RadioButton>
-      <RadioButton layoutX="47.0" layoutY="224.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="82.0" text="Szauna">
+      <RadioButton layoutX="47.0" layoutY="224.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="82.0" style="-fx-font-family: Century Gothic;" text="Szauna">
          <font>
             <Font size="13.0" />
          </font>
       </RadioButton>
-      <RadioButton layoutX="47.0" layoutY="259.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="82.0" text="Masszázs">
+      <RadioButton layoutX="47.0" layoutY="259.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="82.0" style="-fx-font-family: Century Gothic;" text="Masszázs">
          <font>
             <Font size="13.0" />
          </font>
       </RadioButton>
-      <RadioButton layoutX="47.0" layoutY="292.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="82.0" text="Minibár">
+      <RadioButton layoutX="47.0" layoutY="292.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="82.0" style="-fx-font-family: Century Gothic;" text="Minibár">
          <font>
             <Font size="13.0" />
          </font>
       </RadioButton>
-      <RadioButton layoutX="47.0" layoutY="325.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="107.0" text="Szobaszervíz">
+      <RadioButton layoutX="47.0" layoutY="325.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="107.0" style="-fx-font-family: Century Gothic;" text="Szobaszervíz">
          <font>
             <Font size="13.0" />
          </font>

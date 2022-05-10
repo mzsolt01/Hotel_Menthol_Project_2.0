@@ -23,22 +23,22 @@
       </ImageView>
       <Pane fx:id="textBackground" prefHeight="400.0" prefWidth="411.0">
          <children>
-            <Text layoutX="81.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Köszönjük a foglalását!" wrappingWidth="248.63824462890625">
+            <Text layoutX="82.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Century Gothic;" text="Köszönjük a foglalását!" wrappingWidth="265.438232421875">
                <font>
                   <Font size="24.0" />
                </font>
             </Text>
-            <Text layoutX="22.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Az esetleges problémákért vagy visszamondásért az alábbi elérhetőségeken tudja elérni ügyfélszolgálatunkat:" textAlignment="CENTER" wrappingWidth="346.6926574707031">
+            <Text layoutX="33.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Century Gothic;" text="Az esetleges problémákért vagy visszamondásért az alábbi elérhetőségeken tudja elérni ügyfélszolgálatunkat:" textAlignment="CENTER" wrappingWidth="345.0926208496094">
                <font>
                   <Font size="16.0" />
                </font>
             </Text>
-            <Text layoutX="137.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="example@gmail,com" textAlignment="CENTER">
+            <Text layoutX="137.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Century Gothic;" text="example@gmail,com" textAlignment="CENTER">
                <font>
                   <Font size="14.0" />
                </font>
             </Text>
-            <Text layoutX="131.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="tel.: +65 25 365 6985" textAlignment="CENTER">
+            <Text layoutX="135.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Century Gothic;" text="tel.: +65 25 365 6985" textAlignment="CENTER">
                <font>
                   <Font size="14.0" />
                </font>
