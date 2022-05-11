@@ -38,7 +38,7 @@
                   <Font size="14.0" />
                </font>
             </Text>
-            <Text layoutX="135.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Century Gothic;" text="tel.: +65 25 365 6985" textAlignment="CENTER">
+            <Text layoutX="135.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Century Gothic;" text="Tel.: +63 77 222 5555" textAlignment="CENTER">
                <font>
                   <Font size="14.0" />
                </font>

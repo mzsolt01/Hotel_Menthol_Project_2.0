@@ -37,12 +37,6 @@ public class secondPaneController {
     private TextField Email;
 
     @FXML
-    private CheckBox Child;
-
-    @FXML
-    private CheckBox Animal;
-
-    @FXML
     void pushedNext(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(MainApp.class.getResource("/fxml/3rd_pane.fxml"));
         Scene scene = new Scene(loader.load());
@@ -50,7 +44,7 @@ public class secondPaneController {
         Stage stage2 = (Stage)
                 nextButton.getScene().getWindow();
         stage2.close();
-        stage.setTitle("Foglalás");
+        stage.setTitle("Hotel Menthol");
         stage.setScene(scene);
         stage.show();
         textHandler();
@@ -78,8 +72,6 @@ public class secondPaneController {
             guest.setSzemIgSzam(SzemIgSzam.getText());
             guest.setTel(Tel.getText());
             guest.setEmail(Email.getText());
-            guest.setChild(Child.isSelected());
-            guest.setAnimal(Animal.isSelected());
 
             aDAO.saveGuest(guest);
         } catch (Exception e) {

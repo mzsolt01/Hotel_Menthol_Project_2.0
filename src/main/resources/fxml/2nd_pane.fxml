@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -20,26 +19,24 @@
                   <Font size="30.0" />
                </font>
             </Text>
-            <Text layoutX="14.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Century Gothic;" text="Személyes adatok:">
+            <Text layoutX="72.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Century Gothic;" text="Személyes adatok:">
                <font>
                   <Font size="17.0" />
                </font>
             </Text>
-            <TextField fx:id="Email" layoutX="126.0" layoutY="295.0" promptText="E-mail" />
-            <TextField fx:id="SzemIgSzam" layoutX="126.0" layoutY="218.0" promptText="Szem. ig. szám" />
-            <TextField fx:id="Tel" layoutX="126.0" layoutY="259.0" promptText="Tel.: (+36) ..." />
-            <CheckBox fx:id="Animal" layoutX="205.0" layoutY="337.0" mnemonicParsing="false" style="-fx-font-family: Century Gothic;" text="Háziállat" />
-            <CheckBox fx:id="Child" layoutX="126.0" layoutY="337.0" mnemonicParsing="false" style="-fx-font-family: Century Gothic;" text="Gyerek" />
-            <TextField fx:id="FirstName" layoutX="126.0" layoutY="181.0" promptText="Keresztnév" />
-            <TextField fx:id="LastName" layoutX="125.0" layoutY="143.0" prefHeight="25.0" prefWidth="150.0" promptText="Vezetéknév" />
+            <TextField fx:id="Email" layoutX="131.0" layoutY="315.0" promptText="E-mail" />
+            <TextField fx:id="SzemIgSzam" layoutX="131.0" layoutY="238.0" promptText="SzemIgSzam" />
+            <TextField fx:id="Tel" layoutX="131.0" layoutY="279.0" promptText="Tel.: (+36) ..." />
+            <TextField fx:id="FirstName" layoutX="131.0" layoutY="201.0" promptText="Keresztnév" />
+            <TextField fx:id="LastName" layoutX="130.0" layoutY="163.0" prefHeight="25.0" prefWidth="150.0" promptText="Vezetéknév" />
             <Line endX="115.39999389648438" endY="304.0" layoutX="295.0" layoutY="96.0" startX="115.39999389648438" startY="-96.0" stroke="#00000054" />
+            <ImageView fitHeight="36.0" fitWidth="51.0" layoutX="29.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@userHead.png" />
+               </image>
+            </ImageView>
          </children></Pane>
-      <Button fx:id="nextButton" layoutX="512.0" layoutY="350.0" mnemonicParsing="false" onAction="#pushedNext" text="Következő">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font>
-      </Button>
-      <Button fx:id="backButton" layoutX="425.0" layoutY="350.0" mnemonicParsing="false" onAction="#pushedBack" prefHeight="26.0" prefWidth="60.0" stylesheets="@../styles/Styles.css" text="Vissza">
+      <Button fx:id="backButton" layoutX="420.0" layoutY="358.0" mnemonicParsing="false" onAction="#pushedBack" prefHeight="23.0" prefWidth="78.0" stylesheets="@../styles/Styles.css" text="Vissza">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
@@ -49,5 +46,6 @@
             <Image url="@logo.jpg" />
          </image>
       </ImageView>
+      <Button fx:id="nextButton" layoutX="510.0" layoutY="358.0" mnemonicParsing="false" onAction="#pushedNext" prefHeight="26.0" prefWidth="78.0" text="Következő" />
    </children>
 </AnchorPane>

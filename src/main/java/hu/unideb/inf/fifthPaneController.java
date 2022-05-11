@@ -24,7 +24,7 @@ public class fifthPaneController {
         Stage stage2 = (Stage)
                 foglalasButton.getScene().getWindow();
         stage2.close();
-        stage.setTitle("Köszönjük!");
+        stage.setTitle("Hotel Menthol!");
         stage.setScene(scene);
         stage.show();
     }
@@ -37,7 +37,7 @@ public class fifthPaneController {
         Stage stage2 = (Stage)
                 backButton.getScene().getWindow();
         stage2.close();
-        stage.setTitle("Foglalás");
+        stage.setTitle("Hotel Menthol");
         stage.setScene(scene);
         stage.show();
     }

@@ -21,7 +21,7 @@ public class firstPaneController {
         Stage stage2 = (Stage)
                 nextButton.getScene().getWindow();
         stage2.close();
-        stage.setTitle("Foglalás");
+        stage.setTitle("Hotel Menthol");
         stage.setScene(scene);
         stage.show();
     }

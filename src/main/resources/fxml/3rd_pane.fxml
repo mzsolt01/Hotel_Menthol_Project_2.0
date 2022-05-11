@@ -6,68 +6,75 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="backgroundimg" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url(&quot;logo.j&quot;);" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.inf.thirdPaneController">
+<AnchorPane fx:id="backgroundimg" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="433.0" prefWidth="763.0" style="-fx-background-image: url(&quot;logo.j&quot;);" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.inf.thirdPaneController">
    <children>
-      <ImageView fitHeight="131.0" fitWidth="600.0" layoutY="-2.0" pickOnBounds="true" smooth="false">
-         <image>
-            <Image url="@wood.jpg" />
-         </image>
-      </ImageView>
-      <Text layoutX="24.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nászutas lakosztály :">
+      <Pane fx:id="textBackground" layoutY="-1.0" prefHeight="122.0" prefWidth="763.0">
+         <children>
+            <ImageView fitHeight="122.0" fitWidth="198.0" layoutX="582.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Text layoutX="31.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nászutas lakosztály :">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Text>
-      <DatePicker layoutX="223.0" layoutY="23.0" promptText="2022-07-10" />
-      <DatePicker layoutX="222.0" layoutY="57.0" promptText="2022-07-17" />
-      <Text fill="ANTIQUEWHITE" layoutX="137.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Century Gothic;" text="Check-in :">
+      <DatePicker fx:id="checkIN" layoutX="304.0" layoutY="14.0" onAction="#getDateIN" promptText="2022-07-10" />
+      <DatePicker fx:id="checkOUT" layoutX="303.0" layoutY="48.0" onAction="#getDateOUT" promptText="2022-07-17" />
+      <Text layoutX="222.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Century Gothic;" text="Check-in :">
          <font>
             <Font size="16.0" />
          </font>
       </Text>
-      <Text fill="ANTIQUEWHITE" layoutX="128.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Century Gothic;" text="Check-out :">
+      <Text layoutX="213.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Century Gothic;" text="Check-out :">
          <font>
             <Font size="16.0" />
          </font>
       </Text>
-      <Text layoutX="24.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Normál lakosztály :">
+      <Text layoutX="31.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Normál lakosztály :">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Text>
-      <Text layoutX="52.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Century Gothic;" text="2 - 4 főig (+2 főig bővíthető plusz ággyal). Mikróval, hűttővel valamint vízforralóval felszerelt konyharész (főzési lehetőség nélkűl). Zuhanyzóval felszerelt fűrdőszoba. (Összesen: 4 szoba)" wrappingWidth="470.19970703125">
+      <Text layoutX="59.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Century Gothic;" text="2 - 4 főig (+2 főig bővíthető plusz ággyal). Mikróval, hűttővel valamint vízforralóval felszerelt konyharész (főzési lehetőség nélkűl). Zuhanyzóval felszerelt fűrdőszoba. (Összesen: 4 szoba)" wrappingWidth="649.3997802734375">
          <font>
             <Font size="14.0" />
          </font>
       </Text>
-      <Button fx:id="nextButton" layoutX="508.0" layoutY="361.0" mnemonicParsing="false" onAction="#pushedNext" text="Következő">
+      <Button fx:id="nextButton" layoutX="670.0" layoutY="386.0" mnemonicParsing="false" onAction="#pushedNext" prefHeight="26.0" prefWidth="78.0" text="Következő">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
       </Button>
-      <Button fx:id="backButton" layoutX="435.0" layoutY="360.0" mnemonicParsing="false" onAction="#pushedBack" prefHeight="26.0" prefWidth="60.0" text="Vissza">
+      <Button fx:id="backButton" layoutX="582.0" layoutY="386.0" mnemonicParsing="false" onAction="#pushedBack" prefHeight="23.0" prefWidth="78.0" text="Vissza">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
       </Button>
-      <ChoiceBox fx:id="roomTypeBox" layoutX="222.0" layoutY="91.0" prefHeight="26.0" prefWidth="175.0" />
-      <Text layoutX="24.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prémium lakosztály :">
+      <ChoiceBox fx:id="roomTypeBox" layoutX="303.0" layoutY="82.0" prefHeight="26.0" prefWidth="175.0" />
+      <Text layoutX="31.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prémium lakosztály :">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Text>
-      <Text layoutX="52.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Century Gothic;" text="2 - 6 főig (+2 főig bővíthető plusz ággyal). Teljes értékű konyha, valamint egy káddal felszerelt teljes értékű fűrdőszoba várja a vendégeket. (Összesen: 2 szoba))" wrappingWidth="470.19970703125">
+      <Text layoutX="59.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Century Gothic;" text="2 - 6 főig (+2 főig bővíthető plusz ággyal). Teljes értékű konyha, valamint egy káddal felszerelt teljes értékű fűrdőszoba várja a vendégeket. (Összesen: 2 szoba))" wrappingWidth="649.3997802734376">
          <font>
             <Font size="14.0" />
          </font>
       </Text>
-      <Text layoutX="52.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Century Gothic;" text="Vízágyas 2 fős szoba . Teljes értékű konyha, valamint káddal felszerelt fűrdőszoba szolgálja a vendégek kényelmét. (Összesen: 2 szoba)" wrappingWidth="470.19970703125">
+      <Text layoutX="59.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Century Gothic;" text="Vízágyas 2 fős szoba . Teljes értékű konyha, valamint káddal felszerelt fűrdőszoba szolgálja a vendégek kényelmét. (Összesen: 2 szoba)" wrappingWidth="649.3997802734376">
          <font>
             <Font size="14.0" />
          </font>
       </Text>
+      <Line endX="458.20001220703125" endY="15.400009155273438" layoutX="305.0" layoutY="106.0" startX="-305.0" startY="15.400009155273438" stroke="#00000054" />
    </children>
 </AnchorPane>
