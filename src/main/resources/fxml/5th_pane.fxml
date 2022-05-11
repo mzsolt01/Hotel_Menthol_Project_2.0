@@ -13,9 +13,9 @@
                 <Font size="13.0" />
             </font>
         </TextArea>
-        <Text layoutX="31.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Összegzés">
+        <Text layoutX="31.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Century Gothic;" text="Összegzés">
             <font>
-                <Font size="13.0" />
+                <Font name="System Bold" size="18.0" />
             </font>
         </Text>
         <Button fx:id="foglalasButton" layoutX="440.0" layoutY="350.0" mnemonicParsing="false" onAction="#pushedFoglalas" stylesheets="@../styles/Styles.css" text="Foglalás Véglegesítése">
@@ -28,7 +28,7 @@
          </font></Button>
         <Text layoutX="240.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Végösszeg:" />
         <Text layoutX="109.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="..." />
-        <Text layoutX="362.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kezdő dát." />
-        <Text layoutX="492.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vég dát." />
+        <Text layoutX="378.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Century Gothic;" text="Kezdő dát." />
+        <Text layoutX="492.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Century Gothic;" text="Vég dát." />
     </children>
 </AnchorPane>
