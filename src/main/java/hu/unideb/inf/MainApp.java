@@ -11,7 +11,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+
 public class MainApp extends Application {
+
 
     @Override
     public void start(Stage stage) throws Exception {
@@ -19,6 +21,7 @@ public class MainApp extends Application {
         Scene scene = new Scene(loader.load());
         stage.setTitle("Hotel Menthol");
         stage.setScene(scene);
+
         stage.show();
 
     }
@@ -69,6 +72,7 @@ public class MainApp extends Application {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
     }
 
     private static void startDatabase() throws SQLException {

@@ -28,7 +28,7 @@
          </font></Button>
         <Text layoutX="240.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Végösszeg:" />
         <Text layoutX="109.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="..." />
-        <Text layoutX="378.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kezdő dát." />
-        <Text layoutX="492.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vég dát." />
+        <Text layoutX="378.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Century Gothic;" text="Kezdő dát." />
+        <Text layoutX="492.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Century Gothic;" text="Vég dát." />
     </children>
 </AnchorPane>
