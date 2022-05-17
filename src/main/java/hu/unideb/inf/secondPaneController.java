@@ -10,7 +10,11 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+
+import java.util.regex.Pattern;
+
 import java.io.IOException;
+
 
 public class secondPaneController {
     @FXML
@@ -47,6 +51,113 @@ public class secondPaneController {
         stage.show();
         textHandler();
     }
+    public boolean isValidEmail(String mail)
+    {
+
+
+        boolean valid = false;
+
+
+            final String regex = "^[a-zA-Z0-9_!#$%&'*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+$";
+            Pattern pattern = Pattern.compile(regex);
+
+            for (int i = 0; i< mail.length(); i++)
+            {
+                        if (mail.matches(regex)) {
+                            valid = true;
+                        }
+
+            }
+
+            return valid;
+
+    }
+
+    public boolean isValidId(String id) {
+
+
+        boolean valid = false;
+
+
+        final String regex = "^[0-9]{6}+[a-zA-Z]{2}$";
+        Pattern pattern = Pattern.compile(regex);
+
+        for (int i = 0; i < id.length(); i++) {
+            if (id.matches(regex)) {
+                valid = true;
+            }
+
+
+
+
+        }
+        return valid;
+    }
+
+    public boolean isValidTel(String tel) {
+
+
+        boolean valid = false;
+
+
+        final String regex = "^[+]?+[0-9]{6,14}$";
+        Pattern pattern = Pattern.compile(regex);
+
+        for (int i = 0; i < tel.length(); i++) {
+            if (tel.matches(regex)) {
+                valid = true;
+            }
+
+
+
+
+        }
+        return valid;
+    }
+
+    public boolean isValidFName(String fname) {
+
+
+        boolean valid = false;
+
+
+        final String regex = "^[A-Z]++[a-z]+$";
+        Pattern pattern = Pattern.compile(regex);
+
+        for (int i = 0; i < fname.length(); i++) {
+            if (fname.matches(regex)) {
+                valid = true;
+            }
+
+
+
+
+        }
+        return valid;
+    }
+
+    public boolean isValidLName(String lname) {
+
+
+        boolean valid = false;
+
+
+        final String regex = "^[A-Z]++[a-z]+$";
+        Pattern pattern = Pattern.compile(regex);
+
+        for (int i = 0; i < lname.length(); i++) {
+            if (lname.matches(regex)) {
+                valid = true;
+            }
+
+
+
+
+        }
+        return valid;
+    }
+
+
 
     @FXML
     void pushedBack(ActionEvent event) throws IOException {
@@ -62,6 +173,10 @@ public class secondPaneController {
     }
 
     public void textHandler() {
+
+
+
+
         //try-with-resources
         try (GuestDAO aDAO = new JpaGuestDAO();) {
             Guest guest = new Guest();
