@@ -7,6 +7,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
@@ -40,124 +41,32 @@ public class secondPaneController {
 
     @FXML
     void pushedNext(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(MainApp.class.getResource("/fxml/3rd_pane.fxml"));
-        Scene scene = new Scene(loader.load());
-        Stage stage = new Stage();
-        Stage stage2 = (Stage)
-                nextButton.getScene().getWindow();
-        stage2.close();
-        stage.setTitle("Hotel Menthol");
-        stage.setScene(scene);
-        stage.show();
-        textHandler();
-    }
-    public boolean isValidEmail(String mail)
-    {
-
-
-        boolean valid = false;
-
-
-            final String regex = "^[a-zA-Z0-9_!#$%&'*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+$";
-            Pattern pattern = Pattern.compile(regex);
-
-            for (int i = 0; i< mail.length(); i++)
-            {
-                        if (mail.matches(regex)) {
-                            valid = true;
-                        }
-
-            }
-
-            return valid;
-
-    }
-
-    public boolean isValidId(String id) {
-
-
-        boolean valid = false;
-
-
-        final String regex = "^[0-9]{6}+[a-zA-Z]{2}$";
-        Pattern pattern = Pattern.compile(regex);
-
-        for (int i = 0; i < id.length(); i++) {
-            if (id.matches(regex)) {
-                valid = true;
-            }
-
-
-
-
+        if(isValidLName(LastName.getText()) == true && isValidFName(FirstName.getText()) == true && isValidTel(Tel.getText()) == true
+        && isValidId(SzemIgSzam.getText()) == true && isValidEmail(Email.getText()) == true) {
+            FXMLLoader loader = new FXMLLoader(MainApp.class.getResource("/fxml/3rd_pane.fxml"));
+            Scene scene = new Scene(loader.load());
+            Stage stage = new Stage();
+            Stage stage2 = (Stage)
+                    nextButton.getScene().getWindow();
+            stage2.close();
+            stage.setTitle("Hotel Menthol");
+            stage.setScene(scene);
+            stage.show();
+            textHandler();
+        } else if(isValidLName(LastName.getText()) == false && isValidFName(FirstName.getText()) == false && isValidTel(Tel.getText()) == false
+                && isValidId(SzemIgSzam.getText()) == false && isValidEmail(Email.getText()) == false) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setHeaderText("Hibás adatok!");
+            alert.setContentText("Próbálja meg újra megadni az adatokat.");
+            alert.showAndWait();
+            Email.clear();
+            LastName.clear();
+            FirstName.clear();
+            SzemIgSzam.clear();
+            Tel.clear();
         }
-        return valid;
+
     }
-
-    public boolean isValidTel(String tel) {
-
-
-        boolean valid = false;
-
-
-        final String regex = "^[+]?+[0-9]{6,14}$";
-        Pattern pattern = Pattern.compile(regex);
-
-        for (int i = 0; i < tel.length(); i++) {
-            if (tel.matches(regex)) {
-                valid = true;
-            }
-
-
-
-
-        }
-        return valid;
-    }
-
-    public boolean isValidFName(String fname) {
-
-
-        boolean valid = false;
-
-
-        final String regex = "^[A-Z]++[a-z]+$";
-        Pattern pattern = Pattern.compile(regex);
-
-        for (int i = 0; i < fname.length(); i++) {
-            if (fname.matches(regex)) {
-                valid = true;
-            }
-
-
-
-
-        }
-        return valid;
-    }
-
-    public boolean isValidLName(String lname) {
-
-
-        boolean valid = false;
-
-
-        final String regex = "^[A-Z]++[a-z]+$";
-        Pattern pattern = Pattern.compile(regex);
-
-        for (int i = 0; i < lname.length(); i++) {
-            if (lname.matches(regex)) {
-                valid = true;
-            }
-
-
-
-
-        }
-        return valid;
-    }
-
-
 
     @FXML
     void pushedBack(ActionEvent event) throws IOException {
@@ -172,11 +81,82 @@ public class secondPaneController {
         stage.show();
     }
 
+    public boolean isValidEmail(String mail) {
+        boolean valid = false;
+
+        final String regex = "^[a-zA-Z0-9_!#$%&'*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+$";
+        Pattern pattern = Pattern.compile(regex);
+
+        for (int i = 0; i< mail.length(); i++)
+        {
+            if (mail.matches(regex)) {
+                valid = true;
+            }
+
+        }
+
+        return valid;
+
+    }
+
+    public boolean isValidId(String id) {
+        boolean valid = false;
+
+        final String regex = "^[0-9]{6}+[a-zA-Z]{2}$";
+        Pattern pattern = Pattern.compile(regex);
+
+        for (int i = 0; i < id.length(); i++) {
+            if (id.matches(regex)) {
+                valid = true;
+            }
+        }
+        return valid;
+    }
+
+    public boolean isValidTel(String tel) {
+
+        boolean valid = false;
+
+        final String regex = "^[+]?+[0-9]{6,14}$";
+        Pattern pattern = Pattern.compile(regex);
+
+        for (int i = 0; i < tel.length(); i++) {
+            if (tel.matches(regex)) {
+                valid = true;
+            }
+        }
+        return valid;
+    }
+
+    public boolean isValidFName(String fname) {
+        boolean valid = false;
+
+        final String regex = "^[A-Z]++[a-z]+$";
+        Pattern pattern = Pattern.compile(regex);
+
+        for (int i = 0; i < fname.length(); i++) {
+            if (fname.matches(regex)) {
+                valid = true;
+            }
+        }
+        return valid;
+    }
+
+    public boolean isValidLName(String lname) {
+        boolean valid = false;
+
+        final String regex = "^[A-Z]++[a-z]+$";
+        Pattern pattern = Pattern.compile(regex);
+
+        for (int i = 0; i < lname.length(); i++) {
+            if (lname.matches(regex)) {
+                valid = true;
+            }
+        }
+        return valid;
+    }
+
     public void textHandler() {
-
-
-
-
         //try-with-resources
         try (GuestDAO aDAO = new JpaGuestDAO();) {
             Guest guest = new Guest();

@@ -14,10 +14,6 @@ class secondPaneControllerTest {
 
     secondPaneController control = new secondPaneController();
 
-
-
-
-
     @Test
     void isValidEmail() {
 
@@ -27,7 +23,6 @@ class secondPaneControllerTest {
         assertTrue(control.isValidEmail("alice_bob@example.co.in"));
         assertTrue(control.isValidEmail("lopoka_zoli@citromail.hu"));
         assertTrue(control.isValidEmail("zubora08@gmail.com"));
-
         assertFalse(control.isValidEmail("@example.com"));
         assertFalse(control.isValidEmail("aliceexample.com"));
 
@@ -39,16 +34,10 @@ class secondPaneControllerTest {
 
         assertTrue(control.isValidId("611306SA"));
         assertTrue(control.isValidId("143733TA"));
-
         assertFalse(control.isValidId("TA4646"));
         assertFalse(control.isValidId("12345SA"));
         assertFalse(control.isValidId("TAS"));
         assertFalse(control.isValidId("12345SAT"));
-
-
-
-
-
     }
 
     @Test
