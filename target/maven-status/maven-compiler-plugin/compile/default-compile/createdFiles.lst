@@ -1,3 +1,4 @@
+hu\unideb\inf\model\Extra.class
 hu\unideb\inf\model\GuestDAO.class
 hu\unideb\inf\secondPaneController.class
 hu\unideb\inf\thirdPaneController.class
@@ -6,6 +7,7 @@ hu\unideb\inf\fourthPaneController.class
 hu\unideb\inf\model\JpaCheckInAndCheckOutDAO.class
 hu\unideb\inf\model\CheckInAndCheckOutDAO.class
 hu\unideb\inf\model\Room.class
+hu\unideb\inf\model\JpaExtraDAO.class
 hu\unideb\inf\fifthPaneController.class
 hu\unideb\inf\firstPaneController.class
 hu\unideb\inf\model\Guest.class
@@ -15,3 +17,4 @@ hu\unideb\inf\sixthPaneController.class
 hu\unideb\inf\model\RoomDAO.class
 hu\unideb\inf\MainApp.class
 hu\unideb\inf\model\CheckInAndCheckOut.class
+hu\unideb\inf\model\ExtraDAO.class

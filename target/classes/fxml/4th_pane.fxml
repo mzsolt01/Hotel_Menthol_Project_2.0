@@ -30,11 +30,11 @@
             <Line endX="116.4000244140625" endY="158.99996948242188" layoutX="406.0" layoutY="178.0" startX="116.4000244140625" startY="-178.0" stroke="#00000054" />
             <Pane fx:id="innerPane1" layoutX="44.0" layoutY="21.0" prefHeight="282.0" prefWidth="199.0">
                <children>
-                  <CheckBox layoutX="49.0" layoutY="121.0" mnemonicParsing="false" style="-fx-font-family: Century Gothic;" text="Takarítás" />
-                  <CheckBox layoutX="49.0" layoutY="146.0" mnemonicParsing="false" style="-fx-font-family: Century Gothic;" text="Széf" />
-                  <CheckBox layoutX="49.0" layoutY="172.0" mnemonicParsing="false" style="-fx-font-family: Century Gothic;" text="Minibár" />
-                  <CheckBox layoutX="49.0" layoutY="198.0" mnemonicParsing="false" style="-fx-font-family: Century Gothic;" text="Szobaszervíz" />
-                  <Text layoutX="31.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Century Gothic;" text="Extrák" wrappingWidth="152.13671875">
+                  <CheckBox fx:id="Takaritas" layoutX="49.0" layoutY="121.0" mnemonicParsing="false" style="-fx-font-family: Century Gothic;" text="Takarítás" />
+                  <CheckBox fx:id="Szef" layoutX="49.0" layoutY="146.0" mnemonicParsing="false" style="-fx-font-family: Century Gothic;" text="Széf" />
+                  <CheckBox fx:id="Minibar" layoutX="49.0" layoutY="172.0" mnemonicParsing="false" style="-fx-font-family: Century Gothic;" text="Minibár" />
+                  <CheckBox fx:id="Szobaszerviz" layoutX="49.0" layoutY="198.0" mnemonicParsing="false" style="-fx-font-family: Century Gothic;" text="Szobaszervíz" />
+                  <Text layoutX="33.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Century Gothic;" text="Extrák" wrappingWidth="132.93670654296875">
                      <font>
                         <Font size="33.0" />
                      </font>
@@ -53,14 +53,14 @@
                         <Image url="@food-logo-template.png" />
                      </image>
                   </ImageView>
-                  <Text layoutX="31.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Century Gothic;" text="Étkezés" wrappingWidth="132.93670654296875">
+                  <Text layoutX="31.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Century Gothic;" text="Étkezés" wrappingWidth="132.93670654296875">
                      <font>
                         <Font size="33.0" />
                      </font>
                   </Text>
-                  <CheckBox layoutX="49.0" layoutY="173.0" mnemonicParsing="false" style="-fx-font-family: Century Gothic;" text="Vacsora" />
-                  <CheckBox layoutX="49.0" layoutY="121.0" mnemonicParsing="false" style="-fx-font-family: Century Gothic;" text="Reggeli" />
-                  <CheckBox layoutX="49.0" layoutY="148.0" mnemonicParsing="false" style="-fx-font-family: Century Gothic;" text="Ebéd" />
+                  <CheckBox fx:id="Vacsora" layoutX="49.0" layoutY="173.0" mnemonicParsing="false" style="-fx-font-family: Century Gothic;" text="Vacsora" />
+                  <CheckBox fx:id="Reggeli" layoutX="49.0" layoutY="121.0" mnemonicParsing="false" style="-fx-font-family: Century Gothic;" text="Reggeli" />
+                  <CheckBox fx:id="Ebed" layoutX="49.0" layoutY="148.0" mnemonicParsing="false" style="-fx-font-family: Century Gothic;" text="Ebéd" />
                </children>
             </Pane>
          </children>

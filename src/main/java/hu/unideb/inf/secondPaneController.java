@@ -10,6 +10,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.util.regex.Pattern;
@@ -50,6 +51,8 @@ public class secondPaneController {
                     nextButton.getScene().getWindow();
             stage2.close();
             stage.setTitle("Hotel Menthol");
+            Image image = new Image("/fxml/logo-removebg-preview.png");
+            stage.getIcons().add(image);
             stage.setScene(scene);
             stage.show();
             textHandler();
@@ -77,6 +80,8 @@ public class secondPaneController {
                 backButton.getScene().getWindow();
         stage2.close();
         stage.setTitle("Hotel Menthol");
+        Image image = new Image("/fxml/logo-removebg-preview.png");
+        stage.getIcons().add(image);
         stage.setScene(scene);
         stage.show();
     }
@@ -92,7 +97,6 @@ public class secondPaneController {
             if (mail.matches(regex)) {
                 valid = true;
             }
-
         }
 
         return valid;

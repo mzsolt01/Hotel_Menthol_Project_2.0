@@ -4,6 +4,7 @@ import hu.unideb.inf.model.*;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import org.h2.tools.Server;
 import java.sql.SQLException;
@@ -20,6 +21,8 @@ public class MainApp extends Application {
         FXMLLoader loader = new FXMLLoader(MainApp.class.getResource("/fxml/firstPane.fxml"));
         Scene scene = new Scene(loader.load());
         stage.setTitle("Hotel Menthol");
+        Image image = new Image("/fxml/logo-removebg-preview.png");
+        stage.getIcons().add(image);
         stage.setScene(scene);
 
         stage.show();
@@ -28,7 +31,6 @@ public class MainApp extends Application {
 
     public static void main(String[] args) throws SQLException {
         startDatabase();
-        launch(args);
 
         try (RoomDAO aDAO = new JpaRoomDAO();) {
             Room room1 = new Room();
@@ -72,7 +74,7 @@ public class MainApp extends Application {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
+        launch(args);
     }
 
     private static void startDatabase() throws SQLException {

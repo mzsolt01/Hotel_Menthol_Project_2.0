@@ -9,6 +9,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.DatePicker;
+import javafx.scene.control.TextArea;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -56,6 +58,8 @@ public class thirdPaneController implements Initializable {
                 nextButton.getScene().getWindow();
         stage2.close();
         stage.setTitle("Hotel Menthol");
+        Image image = new Image("/fxml/logo-removebg-preview.png");
+        stage.getIcons().add(image);
         stage.setScene(scene);
         stage.show();
         datePickerHandler();
@@ -70,6 +74,8 @@ public class thirdPaneController implements Initializable {
                 backButton.getScene().getWindow();
         stage2.close();
         stage.setTitle("Hotel Menthol");
+        Image image = new Image("/fxml/logo-removebg-preview.png");
+        stage.getIcons().add(image);
         stage.setScene(scene);
         stage.show();
     }
@@ -80,6 +86,7 @@ public class thirdPaneController implements Initializable {
             CheckInAndCheckOut data = new CheckInAndCheckOut();
             data.setCheckIn(checkInDate.toString());
             data.setCheckOut(checkOutDate.toString());
+            data.setSzoba(roomTypeBox.getValue());
 
             aDAO.saveCheckInAndCheckOut(data);
         } catch (Exception e) {

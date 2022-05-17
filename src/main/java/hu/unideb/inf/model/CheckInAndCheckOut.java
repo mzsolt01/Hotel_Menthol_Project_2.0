@@ -11,6 +11,15 @@ public class CheckInAndCheckOut implements Serializable {
     private int id;
     private String CheckIn;
     private String CheckOut;
+    private String Szoba;
+
+    public String getSzoba() {
+        return Szoba;
+    }
+
+    public void setSzoba(String szoba) {
+        Szoba = szoba;
+    }
 
     public String getCheckIn() {
         return CheckIn;
