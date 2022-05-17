@@ -51,25 +51,21 @@ public class secondPaneController {
         stage.show();
         textHandler();
     }
-    public boolean isValid(String mail)
+    public boolean isValidEmail(String mail)
     {
 
-        String size = Email.getText();
+
         boolean valid = false;
 
 
             final String regex = "^[a-zA-Z0-9_!#$%&'*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+$";
             Pattern pattern = Pattern.compile(regex);
 
-            for (int i = 0; i< size.length(); i++)
+            for (int i = 0; i< mail.length(); i++)
             {
-                        if (mail.matches(regex))
-                        {
-                            valid=true;
+                        if (mail.matches(regex)) {
+                            valid = true;
                         }
-
-
-
 
             }
 
@@ -79,14 +75,14 @@ public class secondPaneController {
 
     public boolean isValidId(String id) {
 
-        String size = SzemIgSzam.getText();
+
         boolean valid = false;
 
 
-        final String regex = "^[0-9]{6}+[A-Z]{2}$";
+        final String regex = "^[0-9]{6}+[a-zA-Z]{2}$";
         Pattern pattern = Pattern.compile(regex);
 
-        for (int i = 0; i < size.length(); i++) {
+        for (int i = 0; i < id.length(); i++) {
             if (id.matches(regex)) {
                 valid = true;
             }
@@ -100,14 +96,14 @@ public class secondPaneController {
 
     public boolean isValidTel(String tel) {
 
-        String size = Tel.getText();
+
         boolean valid = false;
 
 
         final String regex = "^[+]?+[0-9]{6,14}$";
         Pattern pattern = Pattern.compile(regex);
 
-        for (int i = 0; i < size.length(); i++) {
+        for (int i = 0; i < tel.length(); i++) {
             if (tel.matches(regex)) {
                 valid = true;
             }
@@ -121,14 +117,14 @@ public class secondPaneController {
 
     public boolean isValidFName(String fname) {
 
-        String size = FirstName.getText() ;
+
         boolean valid = false;
 
 
         final String regex = "^[A-Z]++[a-z]+$";
         Pattern pattern = Pattern.compile(regex);
 
-        for (int i = 0; i < size.length(); i++) {
+        for (int i = 0; i < fname.length(); i++) {
             if (fname.matches(regex)) {
                 valid = true;
             }
@@ -142,14 +138,14 @@ public class secondPaneController {
 
     public boolean isValidLName(String lname) {
 
-        String size = LastName.getText() ;
+
         boolean valid = false;
 
 
         final String regex = "^[A-Z]++[a-z]+$";
         Pattern pattern = Pattern.compile(regex);
 
-        for (int i = 0; i < size.length(); i++) {
+        for (int i = 0; i < lname.length(); i++) {
             if (lname.matches(regex)) {
                 valid = true;
             }
