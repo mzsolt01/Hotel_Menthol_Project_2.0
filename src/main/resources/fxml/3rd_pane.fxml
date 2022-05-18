@@ -44,7 +44,7 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </Text>
-      <Text layoutX="59.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Century Gothic;" text="2 - 4 főig (+2 főig bővíthető plusz ággyal). Mikróval, hűttővel valamint vízforralóval felszerelt konyharész (főzési lehetőség nélkűl). Zuhanyzóval felszerelt fűrdőszoba. (Összesen: 4 szoba)" wrappingWidth="649.3997802734375">
+      <Text layoutX="59.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Century Gothic;" text="2 - 4 főig (+2 főig bővíthető plusz ággyal). Mikróval, hűttővel valamint vízforralóval felszerelt konyharész (főzési lehetőség nélkűl). Zuhanyzóval felszerelt fűrdőszoba.  20.000Ft/nap (Összesen: 4 szoba)" wrappingWidth="612.5997314453125">
          <font>
             <Font size="14.0" />
          </font>
@@ -65,12 +65,12 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </Text>
-      <Text layoutX="59.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Century Gothic;" text="2 - 6 főig (+2 főig bővíthető plusz ággyal). Teljes értékű konyha, valamint egy káddal felszerelt teljes értékű fűrdőszoba várja a vendégeket. (Összesen: 2 szoba))" wrappingWidth="649.3997802734376">
+      <Text layoutX="59.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Century Gothic;" text="2 - 6 főig (+2 főig bővíthető plusz ággyal). Teljes értékű konyha, valamint egy káddal felszerelt teljes értékű fűrdőszoba várja a vendégeket. 39.000Ft/nap (Összesen: 2 szoba)" wrappingWidth="649.3997802734376">
          <font>
             <Font size="14.0" />
          </font>
       </Text>
-      <Text layoutX="59.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Century Gothic;" text="Vízágyas 2 fős szoba . Teljes értékű konyha, valamint káddal felszerelt fűrdőszoba szolgálja a vendégek kényelmét. (Összesen: 2 szoba)" wrappingWidth="649.3997802734376">
+      <Text layoutX="59.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Century Gothic;" text="Vízágyas 2 fős szoba . Teljes értékű konyha, valamint káddal felszerelt fűrdőszoba szolgálja a vendégek kényelmét. 50.000Ft/nap (Összesen: 2 szoba)" wrappingWidth="649.3997802734376">
          <font>
             <Font size="14.0" />
          </font>
