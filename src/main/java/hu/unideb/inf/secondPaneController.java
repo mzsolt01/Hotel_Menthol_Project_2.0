@@ -56,8 +56,8 @@ public class secondPaneController {
             stage.setScene(scene);
             stage.show();
             textHandler();
-        } else if(isValidLName(LastName.getText()) == false && isValidFName(FirstName.getText()) == false && isValidTel(Tel.getText()) == false
-                && isValidId(SzemIgSzam.getText()) == false && isValidEmail(Email.getText()) == false) {
+        } else if(isValidLName(LastName.getText()) == false || isValidFName(FirstName.getText()) == false || isValidTel(Tel.getText()) == false
+                || isValidId(SzemIgSzam.getText()) == false || isValidEmail(Email.getText()) == false) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setHeaderText("Hibás adatok!");
             alert.setContentText("Próbálja meg újra megadni az adatokat.");

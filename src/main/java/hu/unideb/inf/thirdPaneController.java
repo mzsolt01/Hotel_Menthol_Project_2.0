@@ -6,16 +6,15 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.TextArea;
+import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.ResourceBundle;
 
 public class thirdPaneController implements Initializable {
@@ -51,18 +50,40 @@ public class thirdPaneController implements Initializable {
 
     @FXML
     void pushedNext(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(MainApp.class.getResource("/fxml/4th_pane.fxml"));
-        Scene scene = new Scene(loader.load());
-        Stage stage = new Stage();
-        Stage stage2 = (Stage)
-                nextButton.getScene().getWindow();
-        stage2.close();
-        stage.setTitle("Hotel Menthol");
-        Image image = new Image("/fxml/logo-removebg-preview.png");
-        stage.getIcons().add(image);
-        stage.setScene(scene);
-        stage.show();
-        datePickerHandler();
+        String checkInText = checkInDate.toString();
+        String checkOutText = checkOutDate.toString();
+        int checkInDate = 0;
+        int checkOutDate = 0;
+        int napokszama = 0;
+
+        checkInText = checkInText.replace("-","");
+        checkOutText = checkOutText.replace("-","");
+        checkInDate = Integer.parseInt(checkInText);
+        checkOutDate = Integer.parseInt(checkOutText);
+
+        napokszama = checkOutDate - checkInDate;
+
+
+        if ((napokszama >= 3) == true) {
+            FXMLLoader loader = new FXMLLoader(MainApp.class.getResource("/fxml/4th_pane.fxml"));
+            Scene scene = new Scene(loader.load());
+            Stage stage = new Stage();
+            Stage stage2 = (Stage)
+                    nextButton.getScene().getWindow();
+            stage2.close();
+            stage.setTitle("Hotel Menthol");
+            Image image = new Image("/fxml/logo-removebg-preview.png");
+            stage.getIcons().add(image);
+            stage.setScene(scene);
+            stage.show();
+            datePickerHandler();
+        } else if ((napokszama < 3) == true){
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setHeaderText("Hibás adatok!");
+            alert.setContentText("A jelenlegi időtől minimum 3 napra lehet foglalni. Megértését Köszönjük!");
+            alert.showAndWait();
+        }
+
     }
 
     @FXML
@@ -78,6 +99,7 @@ public class thirdPaneController implements Initializable {
         stage.getIcons().add(image);
         stage.setScene(scene);
         stage.show();
+        guestDataDelete();
     }
 
     public void datePickerHandler() {
@@ -89,6 +111,19 @@ public class thirdPaneController implements Initializable {
             data.setSzoba(roomTypeBox.getValue());
 
             aDAO.saveCheckInAndCheckOut(data);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void guestDataDelete() {
+        try (GuestDAO aDAO = new JpaGuestDAO();) {
+            List<Guest> list = new ArrayList<>();
+            list = aDAO.getGuest();
+
+            for (int i = 0; i < list.size(); i++) {
+                aDAO.deleteGuest(list.get(i));
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
