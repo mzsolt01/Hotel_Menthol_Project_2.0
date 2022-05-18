@@ -78,9 +78,9 @@ public class thirdPaneController implements Initializable {
             stage.show();
             datePickerHandler();
         } else if ((napokszama < 3) == true){
-            Alert alert = new Alert(Alert.AlertType.WARNING);
-            alert.setHeaderText("Hibás adatok!");
-            alert.setContentText("A jelenlegi időtől minimum 3 napra lehet foglalni. Megértését Köszönjük!");
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setHeaderText("Hibás foglalalás!");
+            alert.setContentText("A jelenlegi időtől minimum 3 napra lehet foglalni." + "\n" + " Megértését Köszönjük!");
             alert.showAndWait();
         }
 

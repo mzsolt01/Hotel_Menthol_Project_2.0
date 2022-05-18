@@ -16,6 +16,7 @@ import java.util.List;
 public class fourthPaneController {
     String szallasAr = "";
     int rawSzallasAr = 0;
+    int napSzam = 0;
 
     @FXML
     private Button nextButton;
@@ -112,7 +113,7 @@ public class fourthPaneController {
                 }
                 if(extras.get(i).getTakaritas()) {
                     String takaritas = "Takarítás   1500Ft/nap\n";
-                    Sum += 1500;
+                    Sum += napSzam*1500;
                     text += takaritas;
                 }
                 if(extras.get(i).getSzef()) {
@@ -127,17 +128,17 @@ public class fourthPaneController {
                 }
                 if(extras.get(i).getReggeli()) {
                     String reggeli = "Reggeli   1500Ft/nap\n";
-                    Sum += 1500;
+                    Sum += napSzam*1500;
                     text += reggeli;
                 }
                 if(extras.get(i).getEbed()) {
                     String ebed = "Ebéd   2500Ft/nap\n";
-                    Sum += 2500;
+                    Sum += napSzam*2500;
                     text += ebed;
                 }
                 if(extras.get(i).getVacsora()) {
                     String vacsora = "Vacsora   2500Ft/nap\n";
-                    Sum += 2500;
+                    Sum += napSzam*2500;
                     text += vacsora;
                 }
             }
@@ -178,7 +179,8 @@ public class fourthPaneController {
                 checkInDate = Integer.parseInt(checkInTEXT);
                 checkOutDate = Integer.parseInt(checkOutTEXT);
 
-                rawSzallasAr = normal*(checkOutDate - checkInDate);
+                napSzam = (checkOutDate - checkInDate);
+                rawSzallasAr = normal*napSzam;
                 szallasAr = "Normál lakosztály: " + Integer.toString(rawSzallasAr) + "Ft\n";
             } else if(roomType.contains("Prémium")) {
 
@@ -187,7 +189,8 @@ public class fourthPaneController {
                 checkInDate = Integer.parseInt(checkInTEXT);
                 checkOutDate = Integer.parseInt(checkOutTEXT);
 
-                rawSzallasAr = premium*(checkOutDate - checkInDate);
+                napSzam = (checkOutDate - checkInDate);
+                rawSzallasAr = premium*napSzam;
                 szallasAr = "Prémium lakosztály: " + Integer.toString(rawSzallasAr) + "Ft\n";
             } else if(roomType.contains("Nászutas")) {
 
@@ -196,7 +199,8 @@ public class fourthPaneController {
                 checkInDate = Integer.parseInt(checkInTEXT);
                 checkOutDate = Integer.parseInt(checkOutTEXT);
 
-                rawSzallasAr = naszutas*(checkOutDate - checkInDate);
+                napSzam = (checkOutDate - checkInDate);
+                rawSzallasAr = naszutas*napSzam;
                 szallasAr = "Nászutas lakosztály: " + Integer.toString(rawSzallasAr) + "Ft\n";
             }
 
